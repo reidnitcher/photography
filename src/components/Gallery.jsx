@@ -155,7 +155,13 @@ export default function Gallery() {
                       onClick={() => setActiveIndex(item.index)}
                       aria-label={`Open photo: ${item.alt}`}
                     >
-                      <img src={item.src} alt={item.alt} loading="lazy" />
+                      <img
+                        src={item.src}
+                        alt={item.alt}
+                        loading="lazy"
+                        draggable={false}
+                        onContextMenu={(e) => e.preventDefault()}
+                      />
                     </button>
                   ))}
                 </div>
@@ -169,7 +175,9 @@ export default function Gallery() {
           <img
             src={photos[activeIndex].src}
             alt={photos[activeIndex].alt}
+            draggable={false}
             onClick={(e) => e.stopPropagation()}
+            onContextMenu={(e) => e.preventDefault()}
           />
           <button
             className="lightbox-close"
