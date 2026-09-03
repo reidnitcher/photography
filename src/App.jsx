@@ -2,7 +2,9 @@ import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Gallery from './components/Gallery'
 import About from './components/About'
-import Contact from './components/Contact'
+// Contact section is hidden for now — re-add <Contact /> below (and the
+// nav link in Nav.jsx) when ready to show it again.
+// import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -13,7 +15,6 @@ export default function App() {
         <Hero />
         <Gallery />
         <About />
-        <Contact />
       </main>
       <Footer />
     </>
