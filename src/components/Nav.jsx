@@ -5,7 +5,7 @@ export default function Nav() {
     <header className="nav">
       <div className="nav-inner">
         <a href="#top" className="nav-brand">
-          {site.name} <span>{site.tagline}</span>
+          {site.name}
         </a>
         <nav>
           <ul className="nav-links">
